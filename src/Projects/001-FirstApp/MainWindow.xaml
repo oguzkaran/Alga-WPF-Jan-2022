@@ -1,0 +1,27 @@
+﻿<Window x:Class="FirstApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FirstApp"
+        mc:Ignorable="d"
+        Title="AlgaSolutions" Height="100" Width="300">
+    <Grid>
+        <StackPanel>
+            <StackPanel.Children>
+                <Button Content="Save"/>
+                <Button Content="Update"/>
+            </StackPanel.Children>            
+        </StackPanel>
+        
+        <Border Width="100" Height="40">
+            <Border.Child>
+                <Button Content="OK">
+                    <Button.Background>
+                        <SolidColorBrush Color="Red"/>
+                    </Button.Background>
+                </Button>                
+            </Border.Child>                
+        </Border>                    
+    </Grid>
+</Window>
