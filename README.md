@@ -1,20 +1,4 @@
 # Alga-WPF-Jan-2022
 KAYNAK GÖSTERMEK KOŞULUYLA HER TÜRLÜ ALINTI YAPILABİLİR
 
-#java
-#programming
-#eclipse 
-#intellij
-#spring
-#springboot
-#stream
-#parallelstream
-#collections
-#jpa
-#hibernate
-#mapstruct
-#retrofit
-#resttemplate
-#postgresql
-#rxjava
-#crudrepository
+#wpf #csharp #.net #.netcore #dotnet #dotnetcore #entityframework #nuget #dependencyinjection #thread #task #tpl #rest #restful #http
