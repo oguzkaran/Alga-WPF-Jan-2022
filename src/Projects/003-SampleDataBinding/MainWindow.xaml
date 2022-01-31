@@ -1,0 +1,19 @@
+﻿<Window x:Class="SampleDataBinding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SampleDataBinding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="550">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="m_textxBlockCSD" x:FieldModifier="private" Text="C ve Sistem Programcıları Derneği" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Slider x:Name="m_sliderFontSize" Grid.Row="1" VerticalAlignment="Top" Maximum="100" Minimum = "10" HorizontalAlignment="Right" Width="500"/>
+        <TextBox Grid.Row="2" Text="{Binding Value, ElementName=m_sliderFontSize}" TextWrapping="Wrap"/>
+    </Grid>
+</Window>
