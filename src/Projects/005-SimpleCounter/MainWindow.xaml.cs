@@ -22,6 +22,7 @@ namespace SimpleCounter
     public partial class MainWindow : Window
     {
         private Thread m_counterThread;
+        private Mutex m_mutex;
 
         private void clockTimerCallback()
         {
@@ -46,14 +47,24 @@ namespace SimpleCounter
             }
         }
 
-
         private void initClock()
         {
             new Timer(_ => clockTimerCallback(), null, 0, 1000);
         }
 
+        private bool isRunning()
+        {
+            m_mutex = new Mutex(false, "org-csystem-counterapp", out bool createNew);
+
+            return !createNew;
+        }
+
         private void init()
         {
+            if (isRunning()) {
+                MessageBox.Show("Bu programın ikincisi çalıştırılamaz");
+                Close();
+            }
             initClock();
         }
 
@@ -69,6 +80,8 @@ namespace SimpleCounter
                 m_counterThread.Interrupt();
 
             m_counterThread = new Thread(counterThreadCallback);
+
+            m_counterThread.IsBackground = true;
 
             m_counterThread.Start(0);
         }

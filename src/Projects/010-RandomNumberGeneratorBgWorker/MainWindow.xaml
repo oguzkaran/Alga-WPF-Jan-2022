@@ -1,0 +1,32 @@
+﻿<Window x:Class="RandomNumberGenerator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RandomNumberGenerator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="450">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Min" FontSize="16" Height="30" Width="100"/>
+            <TextBox x:Name="m_textBoxMin" Width="300"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Max" FontSize="16" Height="30" Width="100"/>
+            <TextBox x:Name="m_textBoxMax" x:FieldModifier="private" Width="300"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Count" FontSize="16" Height="30" Width="100"/>
+            <TextBox x:Name="m_textBoxCount" Width="300"/>
+        </StackPanel>
+
+        <Label x:Name="m_labelNumbers" FontSize="16" Height="30"/>
+        <Label x:Name="m_labelResult" FontSize="16" Height="30"/>
+        <Button x:Name="m_buttonOK"  Content="OK" Click="m_buttonOK_Click"/>
+        <Button x:Name="m_buttonCancel" Content="Cancel" Click="m_buttonCancel_Click"/>
+        <Button x:Name="m_buttonExit" Content="Exit" Click="m_buttonExit_Click"/>
+        <ProgressBar x:Name="m_progressBarStatus" Minimum="0" Maximum="100" Value="0" Height="30"/>
+    </StackPanel>
+</Window>
