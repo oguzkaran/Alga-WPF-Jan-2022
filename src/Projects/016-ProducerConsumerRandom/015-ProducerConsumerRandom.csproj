@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>_015_ProducerConsumerRandom</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CSDAsync">
+      <HintPath>..\..\Libraries\AsyncUtilLib\bin\Release\net5.0\CSDAsync.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
