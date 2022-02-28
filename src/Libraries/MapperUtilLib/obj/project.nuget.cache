@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "xbexZfrM0JpywrKsrqMsKK82YCkicOgSI9aOS1INq+kA/B9zDAzkzwFg4MRLXiFE5Vgmg1WxURrXPC+CrHgung==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\DotnetCore-JS-WebProg-Aug-2021\\src\\DotnetCore\\Libraries\\MapperUtilLib\\MapperUtilLib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Karans\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Karans\\.nuget\\packages\\mapster\\7.2.0\\mapster.7.2.0.nupkg.sha512",
+    "C:\\Users\\Karans\\.nuget\\packages\\mapster.core\\1.2.0\\mapster.core.1.2.0.nupkg.sha512",
+    "C:\\Users\\Karans\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Karans\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
