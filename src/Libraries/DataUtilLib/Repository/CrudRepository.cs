@@ -140,8 +140,6 @@ namespace CSD.Util.Data.Repository
         public Task<IEnumerable<Entity>> SaveAsync(IEnumerable<Entity> entities)
         {
             throw new NotImplementedException();
-        }
-
-        
+        }        
     }
 }

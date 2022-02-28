@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\DotnetCore-JS-WebProg-Aug-2021\\src\\DotnetCore\\Libraries\\TaskUtilLib\\TaskUtilLib.csproj": {}
+    "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Libraries\\TaskUtilLib\\TaskUtilLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\DotnetCore-JS-WebProg-Aug-2021\\src\\DotnetCore\\Libraries\\TaskUtilLib\\TaskUtilLib.csproj": {
+    "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Libraries\\TaskUtilLib\\TaskUtilLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\DotnetCore-JS-WebProg-Aug-2021\\src\\DotnetCore\\Libraries\\TaskUtilLib\\TaskUtilLib.csproj",
+        "projectUniqueName": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Libraries\\TaskUtilLib\\TaskUtilLib.csproj",
         "projectName": "CSD.Util.TPL",
-        "projectPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\DotnetCore-JS-WebProg-Aug-2021\\src\\DotnetCore\\Libraries\\TaskUtilLib\\TaskUtilLib.csproj",
+        "projectPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Libraries\\TaskUtilLib\\TaskUtilLib.csproj",
         "packagesPath": "C:\\Users\\Karans\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\DotnetCore-JS-WebProg-Aug-2021\\src\\DotnetCore\\Libraries\\TaskUtilLib\\obj\\",
+        "outputPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Libraries\\TaskUtilLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
