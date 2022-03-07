@@ -12,10 +12,10 @@ namespace CSD.SensorApp.Data
         {
         }
 
-        public SensorsDBContext(DbContextOptions<SensorsDBContext> options)
-            : base(options)
-        {
-        }
+        //public SensorsDBContext(DbContextOptions<SensorsDBContext> options)
+        //    : base(options)
+        //{
+        //}
 
         public virtual DbSet<Port> Ports { get; set; }
         public virtual DbSet<Sensor> Sensors { get; set; }

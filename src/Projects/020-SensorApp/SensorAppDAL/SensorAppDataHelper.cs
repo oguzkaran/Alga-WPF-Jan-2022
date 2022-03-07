@@ -11,16 +11,21 @@ using static CSD.Data.DatabaseUtil;
 
 namespace SensorAppDAL
 {
-    public class SensorAppDataHelper
+    public class SensorAppDataHelper //Facade
     {
         private readonly ISensorRepository m_sensorRepository;
         private readonly IPortRepository m_portRepository;
 
-        public SensorAppDataHelper(ISensorRepository sensorRepository, IPortRepository portRepository)
+        public SensorAppDataHelper(ISensorRepository sensorRepository)
         {
-            m_sensorRepository = sensorRepository;
-            m_portRepository = portRepository;
+            m_sensorRepository = sensorRepository;            
         }
+
+        //public SensorAppDataHelper(ISensorRepository sensorRepository, IPortRepository portRepository)
+        //{
+        //    m_sensorRepository = sensorRepository;
+        //    m_portRepository = portRepository;
+        //}
 
         public Task<IEnumerable<Sensor>> FindSensorsByNameAsync(string name)
         {
