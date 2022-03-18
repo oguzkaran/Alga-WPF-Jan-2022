@@ -18,7 +18,7 @@ namespace SensorAppDAL
 
         public SensorAppDataHelper(ISensorRepository sensorRepository)
         {
-            m_sensorRepository = sensorRepository;            
+            m_sensorRepository = sensorRepository;
         }
 
         //public SensorAppDataHelper(ISensorRepository sensorRepository, IPortRepository portRepository)
@@ -26,6 +26,12 @@ namespace SensorAppDAL
         //    m_sensorRepository = sensorRepository;
         //    m_portRepository = portRepository;
         //}
+
+
+        public Task<IEnumerable<Sensor>> FindAllSensorsAsync()
+        {
+            return SubscribeRepository(() => m_sensorRepository.FindAllAsync(), "SensorAppDataHelper.FindAllSensorsAsync");
+        }
 
         public Task<IEnumerable<Sensor>> FindSensorsByNameAsync(string name)
         {
@@ -39,7 +45,12 @@ namespace SensorAppDAL
 
         public Task<Sensor> SaveSensorAsync(Sensor sensor)
         {
-            return SubscribeRepository(() => m_sensorRepository.SaveAsync(sensor), "SensorAppDataHelper.SaveSensor");            
+            return SubscribeRepository(() => m_sensorRepository.SaveAsync(sensor), "SensorAppDataHelper.SaveSensorAsync");            
+        }
+
+        public Task<Sensor> UpdatSensorAsync(Sensor sensor)
+        {
+            return SubscribeRepository(() => m_sensorRepository.UpdateAsync(sensor), "SensorAppDataHelper.UpdatSensoreAsync");
         }
 
         //...

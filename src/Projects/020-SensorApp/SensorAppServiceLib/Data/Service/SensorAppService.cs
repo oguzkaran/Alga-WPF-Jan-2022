@@ -24,6 +24,20 @@ namespace CSD.SensorApp.Data.Service
             return m_mapper.Map<SensorSaveDTO, Sensor>(await m_sensorAppDataHelper.SaveSensorAsync(sensor));           
         }
 
+        private async Task<SensorInfoDTO> updateSensorAsync(SensorInfoDTO sensorDTO)
+        {
+            var sensor = m_mapper.Map<Sensor, SensorInfoDTO>(sensorDTO);
+
+            return m_mapper.Map<SensorInfoDTO, Sensor>(await m_sensorAppDataHelper.UpdatSensorAsync(sensor));
+        }
+
+        private async Task<IEnumerable<SensorInfoDTO>> findSensorsAsync()
+        {
+            var sensors = await m_sensorAppDataHelper.FindAllSensorsAsync();
+
+            return sensors.Select(s => m_mapper.Map<SensorInfoDTO, Sensor>(s));
+        }
+
         private async Task<IEnumerable<SensorInfoDTO>> findSensorsByNameAsync(string name)
         {
             var sensors = await m_sensorAppDataHelper.FindSensorsByNameAsync(name);
@@ -38,19 +52,17 @@ namespace CSD.SensorApp.Data.Service
             return sensors.Select(s => m_mapper.Map<SensorInfoDTO, Sensor>(s));
         }
 
-        
-
         public SensorAppService(SensorAppDataHelper sensorAppDataHelper, IMapper mapper)
         {
             m_sensorAppDataHelper = sensorAppDataHelper;
             m_mapper = mapper;
         }
+        
 
-        public Task<SensorSaveDTO> SaveSensorAsync(SensorSaveDTO sensor)
+        public Task<IEnumerable<SensorInfoDTO>> FindAllSensorsAsync()
         {
-            return SubscribeServiceAsync(() => saveSensorAsync(sensor), "SensorAppService.SaveSensor");
+            return SubscribeServiceAsync(findSensorsAsync, "SensorAppDataHelper.FindAllSensorsAsync");
         }
-
         public Task<IEnumerable<SensorInfoDTO>> FindSensorsByNameAsync(string name)
         {
             return SubscribeServiceAsync(() => findSensorsByNameAsync(name), "SensorAppService.FindSensorsByNameAsync");
@@ -61,6 +73,15 @@ namespace CSD.SensorApp.Data.Service
             return SubscribeServiceAsync(() => findSensorsByNameContainsAsync(text), "SensorAppService.FindSensorsByNameContainsAsync");
         }
 
+        public Task<SensorSaveDTO> SaveSensorAsync(SensorSaveDTO sensor)
+        {
+            return SubscribeServiceAsync(() => saveSensorAsync(sensor), "SensorAppService.SaveSensorAsync");
+        }
+
+        public Task<SensorInfoDTO> UpdateSensorAsync(SensorInfoDTO sensor)
+        {
+            return SubscribeServiceAsync(() => updateSensorAsync(sensor), "SensorAppService.UpdateSensorAsync");
+        }
         //...
     }
 }

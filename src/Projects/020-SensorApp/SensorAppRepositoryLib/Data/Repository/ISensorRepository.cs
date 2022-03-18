@@ -11,5 +11,7 @@ namespace CSD.SensorApp.Data.Repository
     {
         Task<IEnumerable<Sensor>> FindByNameAsync(string name);
         Task<IEnumerable<Sensor>> FindByNameContainsAsync(string text);
+        public Task<Sensor> UpdateAsync(Sensor sensor);
+        
     }
 }

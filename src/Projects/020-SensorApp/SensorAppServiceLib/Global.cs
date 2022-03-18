@@ -13,7 +13,7 @@ namespace CSD.SensorApp
     {
         public static void AddDependency(ServiceCollection services)
         {
-            services.AddSingleton<SensorAppDataHelper>();                
+            services.AddSingleton<SensorAppDataHelper>();
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using CSD.SensorApp.Data.Service;
+﻿using CSD.SensorApp.Data.DTO;
+using CSD.SensorApp.Data.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,21 +28,63 @@ namespace SensorApp
         {
             InitializeComponent();
             m_sensorAppService = sensorAppService;
-
-            //doWork();
         }
 
-        public MainWindow() //?
+        public MainWindow()
         {
             InitializeComponent();
             Close();
         }
 
-        private async void doWork()
+        private void listCallback(IEnumerable<SensorInfoDTO> sensors)
         {
-            var sensors = await m_sensorAppService.FindSensorsByNameAsync("abc");
+            sensors.ToList().ForEach(si => m_listBoxSensors.Items.Add(si));
+        }
 
-            Dispatcher.Invoke((Action)(() => MessageBox.Show(sensors.Count().ToString())));
+        private async void m_buttonList_Click(object sender, RoutedEventArgs e)
+        {
+            m_listBoxSensors.Items.Clear();
+            var sensors = await m_sensorAppService.FindAllSensorsAsync();
+
+            Action action = () => listCallback(sensors);
+
+            if (sensors.Count() == 0)
+                action = () => MessageBox.Show("No data yet");
+
+            Dispatcher.Invoke(action);
+        }
+
+        private void m_listBoxSensors_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var si = m_listBoxSensors.SelectedItem as SensorInfoDTO;
+
+            m_textBoxSensorName.Text = si.Name;
+            m_textBoxSensorHost.Text = si.Host;
+        }
+        
+        private async void m_buttonFind_Click(object sender, RoutedEventArgs e)
+        {
+            m_listBoxSensors.Items.Clear();
+            var sensors = await m_sensorAppService.FindSensorsByNameAsync(m_textBoxName.Text.Trim());
+
+            Action action = () => listCallback(sensors);
+
+            if (sensors.Count() == 0)
+                action = () => MessageBox.Show("No data yet");
+
+            Dispatcher.Invoke(action);
+        }
+
+        private void m_buttonUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            if (m_listBoxSensors.SelectedIndex == -1)
+                return;
+
+            var sensor = m_listBoxSensors.SelectedItem as SensorInfoDTO;
+
+            sensor.Name = m_textBoxSensorName.Text;
+            sensor.Host = m_textBoxSensorHost.Text;
+            m_sensorAppService.UpdateSensorAsync(sensor);
         }
     }
 }

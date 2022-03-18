@@ -6,7 +6,16 @@
         xmlns:local="clr-namespace:SensorApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <StackPanel>
+        <StackPanel Orientation="Vertical">
+            <ListBox x:Name="m_listBoxSensors" x:FieldModifier="private" SelectionChanged="m_listBoxSensors_SelectionChanged" Width="100" Height="200"/>
+            <TextBox x:Name="m_textBoxSensorName" TextWrapping="Wrap"/>
+            <TextBox x:Name="m_textBoxSensorHost" TextWrapping="Wrap"/>
+            <Button x:Name="m_buttonUpdate" x:FieldModifier="private" Content="Update" Click="m_buttonUpdate_Click"/>
+        </StackPanel>
 
-    </Grid>
+        <Button x:Name="m_buttonFind" x:FieldModifier="private" Content="Find" Click="m_buttonFind_Click"/>
+        <Button x:Name="m_buttonList" x:FieldModifier="private" Content="List All" Click="m_buttonList_Click"/>
+        <TextBox x:Name="m_textBoxName" TextWrapping="Wrap"/>
+    </StackPanel>
 </Window>

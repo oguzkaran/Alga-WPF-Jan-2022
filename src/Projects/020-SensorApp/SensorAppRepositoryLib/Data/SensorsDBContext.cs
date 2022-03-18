@@ -23,7 +23,7 @@ namespace CSD.SensorApp.Data
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (optionsBuilder.IsConfigured)
-                return;            
+                return;
 
             optionsBuilder.UseSqlServer("Server = aws-mssql.cct1ehgoywdp.us-east-2.rds.amazonaws.com; Database = Algaj22_SensorsDB; User Id = admin; Password = csystem1993;");
         }
