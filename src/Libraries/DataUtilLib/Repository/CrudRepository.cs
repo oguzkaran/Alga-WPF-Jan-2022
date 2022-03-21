@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSD.Util.Data.Repository
 {
-    public class CrudRepository<Entity, ID, Context> : ICrudRepository<Entity, ID>
+    public abstract class CrudRepository<Entity, ID, Context> : ICrudRepository<Entity, ID>
         where Entity : class, IEntity<ID>
         where Context : DbContext
     {
@@ -40,9 +40,9 @@ namespace CSD.Util.Data.Repository
             return task;
         }        
 
-        public Context Ctx { get; }
+        protected Context Ctx { get; }
 
-        public CrudRepository(Context context)
+        protected CrudRepository(Context context)
         {
             Ctx = context;
             m_entities = Ctx.Set<Entity>();
