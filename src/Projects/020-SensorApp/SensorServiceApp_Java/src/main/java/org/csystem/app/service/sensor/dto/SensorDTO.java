@@ -9,7 +9,7 @@ import java.util.Set;
 public class SensorDTO {
     private String m_name;
     private LocalDate m_registerDate;
-    private boolean m_active;
+    private int m_port;
     private Set<SensorDataDTO> m_data;
 
     public String getName()
@@ -34,14 +34,14 @@ public class SensorDTO {
         m_registerDate = registerDate;
     }
 
-    public boolean isActive()
+    public int getPort()
     {
-        return m_active;
+        return m_port;
     }
 
-    public void setActive(boolean active)
+    public void setPort(int active)
     {
-        m_active = active;
+        m_port = active;
     }
 
     public Set<SensorDataDTO> getData()

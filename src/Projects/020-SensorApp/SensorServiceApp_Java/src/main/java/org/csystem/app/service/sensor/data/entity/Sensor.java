@@ -18,8 +18,8 @@ public class Sensor {
     @Column(name = "register_date", nullable = false)
     public LocalDate registerDate = LocalDate.now();
 
-    @Column(name = "active", nullable = false)
-    public boolean active;
+    @Column(name = "port", nullable = false)
+    public int port;
 
     @Column(length = 1024)
     public String description;
