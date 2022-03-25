@@ -10,7 +10,6 @@ public class SensorDTO {
     private String m_name;
     private LocalDate m_registerDate;
     private int m_port;
-    private Set<SensorDataDTO> m_data;
 
     public String getName()
     {
@@ -42,16 +41,5 @@ public class SensorDTO {
     public void setPort(int active)
     {
         m_port = active;
-    }
-
-    public Set<SensorDataDTO> getData()
-    {
-        return m_data;
-    }
-
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    public void setData(Set<SensorDataDTO> data)
-    {
-        m_data = data;
     }
 }

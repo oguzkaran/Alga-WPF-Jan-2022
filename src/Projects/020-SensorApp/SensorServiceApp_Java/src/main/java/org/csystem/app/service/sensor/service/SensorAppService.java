@@ -43,8 +43,6 @@ public class SensorAppService {
     {
         var dto = m_sensorMapper.toSensorDTO(sensor);
 
-        dto.setData(m_sensorDataMapper.toSensorDataDTOs(sensor.sensorData));
-
         return dto;
     }
 
