@@ -36,7 +36,7 @@ namespace CSD.SensorApp.Data.Repository
 
         private async Task<IEnumerable<SensorInfo>> findAllCallback()
         {
-            var response = await m_httpClient.GetStringAsync("http://192.168.1.93:50501/api/sensors/sensors");
+            var response = await m_httpClient.GetStringAsync("http://161.97.141.113:50501/api/sensors/sensors");
             var sensors = JsonConvert.DeserializeObject<SensorsInfo>(response);
 
             return sensors.Sensors;
