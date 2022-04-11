@@ -1,0 +1,19 @@
+﻿<Window x:Class="ValueConverters.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ValueConverters"
+        xmlns:converters="clr-namespace:ValueConverters.Converters"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="500">
+    <Window.Resources>
+        <converters:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </Window.Resources>
+    <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="25">
+        <CheckBox x:Name="m_checkBoxHideShow" x:FieldModifier="private" Content="Hide/Show" IsChecked="True"/>
+        <Rectangle Fill="Blue" Margin="80 0 0 0 " Width="140" Height="50" 
+                   Visibility="{Binding IsChecked, ElementName=m_checkBoxHideShow,
+            Converter={StaticResource BoolToVisibilityConverter}}"/>
+    </StackPanel>
+</Window>

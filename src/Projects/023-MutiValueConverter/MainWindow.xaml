@@ -1,0 +1,27 @@
+﻿<Window x:Class="MutiValueConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MutiValueConverter"
+        xmlns:converters="clr-namespace:MutiValueConverter.Converters"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <converters:FullnameConverter x:Key="FullnameConverter"/>
+    </Window.Resources>
+    <StackPanel Orientation="Vertical">
+        <TextBox x:Name="m_textBoxFirstname" x:FieldModifier="private"/>
+        <TextBox x:Name="m_textBoxMiddlename" x:FieldModifier="private"/>
+        <TextBox x:Name="m_textBoxFamilyname" x:FieldModifier="private"/>
+        <TextBox x:Name="m_textBoxFullname" x:FieldModifier="private">
+            <TextBox.Text >
+                <MultiBinding Converter="{StaticResource FullnameConverter}">
+                    <Binding ElementName="m_textBoxFirstname" Path="Text" Mode="TwoWay"/>
+                    <Binding ElementName="m_textBoxMiddlename" Path="Text" Mode="TwoWay"/>
+                    <Binding ElementName="m_textBoxFamilyname" Path="Text" Mode="TwoWay"/>
+                </MultiBinding>
+            </TextBox.Text>
+        </TextBox>
+    </StackPanel>
+</Window>
