@@ -16,10 +16,10 @@
 
   <ItemGroup>
     <Reference Include="CSD.Data">
-      <HintPath>..\..\..\Libraries\DataUtilLib\bin\Release\net5.0\CSD.Data.dll</HintPath>
+      <HintPath>..\..\..\..\Libraries\DataUtilLib\bin\Release\net5.0\CSD.Data.dll</HintPath>
     </Reference>
     <Reference Include="CSDAsync">
-      <HintPath>..\..\..\Libraries\AsyncUtilLib\bin\Release\net5.0\CSDAsync.dll</HintPath>
+      <HintPath>..\..\..\..\Libraries\AsyncUtilLib\bin\Release\net5.0\CSDAsync.dll</HintPath>
     </Reference>
   </ItemGroup>
 

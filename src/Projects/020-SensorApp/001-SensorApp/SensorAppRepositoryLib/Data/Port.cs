@@ -10,7 +10,6 @@ namespace CSD.SensorApp.Data
         public long Id { get; set; }
         public int SensorId { get; set; }
         public int Number { get; set; }
-
         public virtual Sensor Sensor { get; set; }
     }
 }
