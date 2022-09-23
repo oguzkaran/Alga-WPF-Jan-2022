@@ -1,28 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppServiceLib\\SensorAppServiceLib.csproj": {}
+    "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppServiceLib\\SensorAppServiceLib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\SensorAppDAL.csproj": {
+    "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\SensorAppDAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\SensorAppDAL.csproj",
+        "projectUniqueName": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\SensorAppDAL.csproj",
         "projectName": "SensorAppDAL",
-        "projectPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\SensorAppDAL.csproj",
-        "packagesPath": "C:\\Users\\Karans\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\obj\\",
+        "projectPath": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\SensorAppDAL.csproj",
+        "packagesPath": "C:\\Users\\oguzkaran\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Karans\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\oguzkaran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -35,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj": {
-                "projectPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj"
+              "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj": {
+                "projectPath": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj"
               }
             }
           }
@@ -76,34 +69,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj": {
+    "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj",
+        "projectUniqueName": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj",
         "projectName": "SensorAppRepositoryLib",
-        "projectPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj",
-        "packagesPath": "C:\\Users\\Karans\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\obj\\",
+        "projectPath": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj",
+        "packagesPath": "C:\\Users\\oguzkaran\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Karans\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\oguzkaran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -161,34 +161,41 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppServiceLib\\SensorAppServiceLib.csproj": {
+    "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppServiceLib\\SensorAppServiceLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppServiceLib\\SensorAppServiceLib.csproj",
+        "projectUniqueName": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppServiceLib\\SensorAppServiceLib.csproj",
         "projectName": "CSD.SensorAppService",
-        "projectPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppServiceLib\\SensorAppServiceLib.csproj",
-        "packagesPath": "C:\\Users\\Karans\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppServiceLib\\obj\\",
+        "projectPath": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppServiceLib\\SensorAppServiceLib.csproj",
+        "packagesPath": "C:\\Users\\oguzkaran\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppServiceLib\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Karans\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\oguzkaran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -201,11 +208,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\SensorAppDAL.csproj": {
-                "projectPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\SensorAppDAL.csproj"
+              "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\SensorAppDAL.csproj": {
+                "projectPath": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppDAL\\SensorAppDAL.csproj"
               },
-              "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj": {
-                "projectPath": "C:\\Users\\Karans\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj"
+              "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj": {
+                "projectPath": "C:\\Users\\oguzkaran\\Dropbox\\CSD\\Kurslar\\Alga-WPF-Jan-2022\\src\\Projects\\020-SensorApp\\006-SensorAppSP\\SensorAppRepositoryLib\\SensorAppRepositoryLib.csproj"
               }
             }
           }
@@ -257,12 +264,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\oguzkaran\Dropbox\CSD\Kurslar\Alga-WPF-Jan-2022\src\Projects\020-SensorApp\006-SensorAppSP\SensorApp\obj\Debug\net5.0-windows\
+C:\Users\oguzkaran\Dropbox\CSD\Kurslar\Alga-WPF-Jan-2022\src\Projects\020-SensorApp\006-SensorAppSP\SensorApp\obj\Debug\net6.0-windows\
 SensorApp
 none
 false
-TRACE;DEBUG;NET;NET5_0;NETCOREAPP
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\oguzkaran\Dropbox\CSD\Kurslar\Alga-WPF-Jan-2022\src\Projects\020-SensorApp\006-SensorAppSP\SensorApp\App.xaml
 11407045341
 
-5592240994
-225-1617012490
+5271226596
+226-872626169
 MainWindow.xaml;
 
 True
